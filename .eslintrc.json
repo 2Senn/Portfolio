@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "extends": "next",
+  "rules": [
+    "error",
+    {
+      "argsIgnorePattern": "^_",
+      "varsIgnorePattner": "^_"
+    }
+  ]
+}
