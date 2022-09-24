@@ -48,8 +48,8 @@ const Work = () => {
           </ListItem>
         </List>
 
-        <WorkImage src="/images/works/Noor.jpeg" alt="Noor" />
-        <WorkImage src="/images/works/Noor2.jpg" alt="Noor" />
+        <WorkImage src="/images/works/noor.jpeg" alt="Noor" />
+        <WorkImage src="/images/works/noor2.jpg" alt="Noor" />
       </Container>
     </Layout>
   )
