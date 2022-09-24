@@ -32,7 +32,7 @@ const Work = () => {
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://github.com/2Senn/ShiroSoftwareAgency">
+            <Link href="https://shiro-gold.vercel.app">
               https://github.com/2Senn/ShiroSoftwareAgency
               <ExternalLinkIcon mx="2px" />
             </Link>
