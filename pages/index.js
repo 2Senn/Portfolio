@@ -1,11 +1,15 @@
-import { 
-  Box, 
-  Button, 
-  Container, 
-  Heading, 
-  Image, 
-  Link, 
-  useColorModeValue, 
+import {
+  Box,
+  Button,
+  Container,
+  Heading,
+  Icon,
+  Image,
+  Link,
+  List,
+  ListItem,
+  SimpleGrid,
+  useColorModeValue,
 } from "@chakra-ui/react"
 import NextLink from 'next/link'
 import Layout from '../components/layouts/article'
@@ -13,15 +17,20 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import { BioYear, BioSection } from '../components/bio'
+import {
+  IoLogoLinkedin,
+  IoLogoGithub,
+  IoLogoTwitter,
+} from 'react-icons/io5'
 
 const Page = () => {
   return (
     <Layout>
       <Container>
-        <Box 
-          borderRadius="lg" 
+        <Box
+          borderRadius="lg"
           bg={useColorModeValue('whiteAlpha.500', '#31433B')}
-          p={3} 
+          p={3}
           mb={6}
           align="center"
           mt={2}
@@ -29,21 +38,21 @@ const Page = () => {
         >
           Hello, I&apos;m a full-stack developer based in Jordan!
         </Box>
-        <Box display={{md: 'flex'}}>
+        <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as={"h2"} variant="page-title">
               Faisal Jweihan
             </Heading>
             <p>Wanderer ( Developer / Writer / Designer )</p>
           </Box>
-          <Box 
-            flexShrink={0} 
-            mt={{base: 4, md: 0}} 
-            ml={{md: 6}} 
+          <Box
+            flexShrink={0}
+            mt={{ base: 4, md: 0 }}
+            ml={{ md: 6 }}
             align="center"
           >
-            <Image 
-              maxWidth="110px" 
+            <Image
+              maxWidth="110px"
               display="inline-block"
               borderRadius="full"
               src="/images/me-logo.svg"
@@ -67,15 +76,15 @@ const Page = () => {
                 Noor{' '}
               </Link>
             </NextLink>
-            that has been in development 
+            that has been in development
             for a while now.
           </Paragraph>
           <Box
-            align="center" 
+            align="center"
             my={4}
           >
             <NextLink href={"/works"}>
-              <Button 
+              <Button
                 rightIcon={<ChevronRightIcon />}
                 bgColor={useColorModeValue('#442c2e', 'teal.200')}
                 color={useColorModeValue('whiteAlpha.800', 'black')}
@@ -124,8 +133,48 @@ const Page = () => {
             I ❤
           </Heading>
           <Paragraph>
-            Reading || Writing || Travelling || Puzzles || Space || Mochi 🍡 
+            Reading || Writing || Travelling || Puzzles || Space || Mochi 🍡
           </Paragraph>
+        </Section>
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/2Senn" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @2Senn
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://www.linkedin.com/in/faisal-jweihan-64abb11bb/" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  Faisal Jweihan
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com/_2Senn" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme={'teal'}
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @_2Senn
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
