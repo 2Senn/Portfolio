@@ -33,7 +33,7 @@ const Work = () => {
           <ListItem>
             <Meta>Website</Meta>
             <Link href="https://shiro-gold.vercel.app">
-              https://github.com/2Senn/ShiroSoftwareAgency
+              https://shiro-gold.vercel.app
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
