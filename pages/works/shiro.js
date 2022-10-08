@@ -20,7 +20,8 @@ const Work = () => {
         </Title>
         <P>
           A software agency website powered by <b>React.js</b> and{' '}
-          <b>Next.js</b>.
+          <b>Next.js</b> with <b>React context</b> for state management and <b>MatrialUI</b> for different components that
+          were styled using <b>styled-components</b>
           Making use of the latest techniques such as parallax and sticky parallax effects,
           carousel view, sliders, as well as a contact form using{' '}
           <NextLink href={"https://www.formspree.com"} >
