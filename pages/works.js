@@ -8,11 +8,12 @@ import {
   useColorModeValue
 } from "@chakra-ui/react";
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item' 
+import { WorkGridItem } from '../components/grid-item'
 import thumbShiro from '../public/images/works/shiro.jpg'
 import thumbAmanah from '../public/images/works/amanah.jpg'
 import thumbNoor from '../public/images/works/noor.jpeg'
 import thumbMochi from '../public/images/works/mochi-dash.jpg'
+import thumbElektra from '../public/images/works/Elektra.jpg'
 import NextLink from 'next/link'
 
 
@@ -23,14 +24,14 @@ const Works = () => {
         Works
       </Heading>
 
-      <SimpleGrid columns={[1,1,2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem 
-            id="shiro" 
+          <WorkGridItem
+            id="shiro"
             title={"Shiro Software Agency"}
             thumbnail={thumbShiro}
           >
-            A software agency website powered by <b>React.js</b> and{' '} 
+            A software agency website powered by <b>React.js</b> and{' '}
             <b>Next.js</b>.
             Making use of the latest techniques such as parallax and sticky parallax effects,
             carousel view, sliders, as well as a contact form using{' '}
@@ -38,7 +39,7 @@ const Works = () => {
               <Link>
                 formspree.
               </Link>
-            </NextLink> 
+            </NextLink>
           </WorkGridItem>
         </Section>
         <Section>
@@ -47,7 +48,7 @@ const Works = () => {
             title="Amanah Real Estate"
             thumbnail={thumbAmanah}
           >
-            Real Estate website used for bookings and viewing lettings. 
+            Real Estate website used for bookings and viewing lettings.
             Powered by React.
           </WorkGridItem>
         </Section>
@@ -62,15 +63,15 @@ const Works = () => {
           </WorkGridItem>
         </Section>
       </SimpleGrid>
-      
+
       <Section delay={0.2}>
-        <Divider my={6}  />
+        <Divider my={6} />
         <Heading as='h3' fontSize={20} mb={4}>
           Side-Projects
         </Heading>
       </Section>
 
-      <SimpleGrid columns={[1,1,2]} gap={6}>
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.4}>
           <WorkGridItem
             id="mochi"
@@ -78,9 +79,18 @@ const Works = () => {
             title="Mochi Dashboard"
           >
             Dashboard for viewing financial information and trends throughout the month.
-            With an integrated calender, editor, and kanban boards. Moreover, past orders and customers can 
+            With an integrated calender, editor, and kanban boards. Moreover, past orders and customers can
             be viewed with sorting functionailities.
-          </WorkGridItem> 
+          </WorkGridItem>
+        </Section>
+        <Section>
+          <WorkGridItem
+            id="elektra"
+            title="Elektra"
+            thumbnail={thumbElektra}
+          >
+            A Markdown Note taking app built using <b>Electron, Vite, React, Typescript, CodeMirror</b> and <b>Remark</b>
+          </WorkGridItem>
         </Section>
       </SimpleGrid>
     </Container>
